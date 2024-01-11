@@ -18,7 +18,6 @@ const unsigned long eventTime_2 = 5000;
 unsigned long previousTime_1 = 0;
 unsigned long previousTime_2 = 0;
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   Gsm.begin(9600);
   Servo1.attach(9);
@@ -47,7 +46,6 @@ bool flag1 = false;
 long Distance1, Duration1;
 
 void loop() {
-  // put your main code here, to run repeatedly:
   unsigned long currentTime = millis();
 
   if ( currentTime - previousTime_1 >= eventTime_1 )
