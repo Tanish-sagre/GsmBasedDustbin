@@ -148,7 +148,7 @@ void send_msg()
   delay(100);
   Gsm.println("AT+CMGF=1");    //Sets the GSM Module in Text Mode
   delay(1000);  // Delay of 1000 milli seconds or 1 second
-  Gsm.println("AT+CMGS=\"+919589223284\"\r"); // Replace x with mobile number
+  Gsm.println("AT+CMGS=\"+919589223284\"\r");
   delay(1000);
   Gsm.println("DUST BIN IS FULL");// The SMS text you want to send
   delay(100);
